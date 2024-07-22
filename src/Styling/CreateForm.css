@@ -1,0 +1,42 @@
+.createform-mother-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createform-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.createform-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat";
+}
+
+.createform-input {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 23px;
+}
+
+.createform-select {
+    margin-left: 23px;
+}
+
+.createform-btn {
+    width: 50%;
+    height: 40px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 7px;
+    font-family: "Montserrat";
+}
+
+.createform-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}

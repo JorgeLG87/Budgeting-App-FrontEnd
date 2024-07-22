@@ -1,0 +1,84 @@
+.editform {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    margin-left: 10%;
+    gap: 10px;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+.editform-title {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 40px;
+}
+
+.editform-label {
+    font-family: "Montserrat";
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+}
+
+.editform-input {
+    margin-left: 23px;
+    width: 45%;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-left: 100%;
+}
+
+.submit-btn {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-family: "Montserrat";
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.cancel-btn {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-family: "Montserrat";
+    background-color: rgb(255, 172, 172);
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.delete-btn {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    /* margin-left: 50%; */
+    border: none;
+    border-radius: 7px;
+    font-family: "Montserrat";
+    background-color: rgb(255, 172, 172);
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}

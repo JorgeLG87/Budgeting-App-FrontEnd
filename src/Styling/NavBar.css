@@ -1,0 +1,36 @@
+.navbar-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: 1px solid black; */
+    border: none;
+    width: 100vw;
+    height: 15vh;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.navbar-title {
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 45px;
+    margin-top: 4.5%;
+}
+
+.navbar-title:hover {
+    cursor: pointer;
+}
+
+.navbar-btn {
+    width: 30%;
+    height: 60px;
+    margin-left: 60%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 4.5%;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.navbar-btn:hover {
+    cursor: pointer;
+}
+

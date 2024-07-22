@@ -1,0 +1,35 @@
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.index-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 70px;
+    font-family: "Montserrat";
+}
+
+.single-transaction {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-top: 20px;
+    gap: 300px;
+    border-bottom: 1px solid gray;
+    font-family: "Montserrat";
+}
+
+.single-transaction:hover {
+    cursor: pointer;
+}
+
+.total {
+    margin-left: 45%;
+    margin-top: 30px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
