@@ -3,11 +3,14 @@ import "../Styling/Index.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function Index() {
+    
+    const API = import.meta.env.VITE_MY_API_URL;
     const [ transactionsArr, setTransactionsArr ] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/").then(response => response.json())
+        fetch(`${API}`).then(response => response.json())
         .then(res => setTransactionsArr(res));
     },[])
 

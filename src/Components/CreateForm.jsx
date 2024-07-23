@@ -30,7 +30,7 @@ export default function CreateForm() {
         setNewTransaction({
             id: transactionsArrLength+1,
             typeTransaction: document.getElementById("createform-type").value || "None",
-            amount: Number(document.getElementById("createform-amount")).value || 0,
+            amount: Number((document.getElementById("createform-amount")).value) || 0,
             date: document.getElementById("createform-date").value || "None",
             from: document.getElementById("createform-from").value || "None",
             category: document.getElementById("createform-category").value || "None"

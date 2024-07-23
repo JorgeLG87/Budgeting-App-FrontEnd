@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import "../Styling/ShowPage.css";
 
 
-export default function ShowPage() {
+export default function ShowPage({ Delete }) {
 
-    
+    const API = import.meta.env.VITE_MY_API_URL
     const { id } = useParams();
     const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ export default function ShowPage() {
     const [ typeUpperCase, setTypeUpperCase ] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:4000/${id}`).then(response => { return response.json()})
+        fetch(`${API}${id}`).then(response => { return response.json()})
         .then(res => setTransaction(res))
         .catch(() => {
             navigate('/notfound');
@@ -44,7 +44,10 @@ export default function ShowPage() {
                 <p className="transaction-amount">$ {transaction.amount}</p>
             </div>
             </div>
-            <Link style={{display:"content", width:"10%"}} to={`/${transaction.id}/edit`}><button className="edit-btn" type="button">Edit</button></Link>
+            <div className="btns2-container">
+                <Link style={{display:"content", width:"10%"}} to={`/${transaction.id}/edit`}><button className="edit-btn" type="button">Edit</button></Link>
+                <Delete id={id}/>
+            </div>
         </div>
     )
 }

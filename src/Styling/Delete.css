@@ -1,0 +1,15 @@
+.delete-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    /* margin-left: 50%; */
+    border: none;
+    border-radius: 7px;
+    font-family: "Montserrat";
+    background-color: rgb(255, 172, 172);
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
